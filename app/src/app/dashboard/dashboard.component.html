@@ -1,0 +1,7 @@
+<form #record="ngForm" (ngSubmit)="image(record.value)">
+Category :<input type="input" name="category" ngModel> <br><br>
+Image: <input type="file" name="img" (change)="details($event)" ngModel><br>
+<b id="error"></b>
+<input type="submit" value="Add">
+</form>
+<button (click)="Viewlists()">View</button>

@@ -1,0 +1,27 @@
+<form #forme="ngForm" (ngSubmit)="submit(forme.value)">
+   <!-- <input type="file" (change)="details($event)"> --->
+    <strong id="error"></strong>
+   Name : <input type="text" name="name" ngModel><br>
+Password:    <input type="password" name="password" ngModel><br>
+    <input type="button" value="Sign up" (click)="signup(forme.value)">
+    <input type="Submit" value="submit">
+    <b id="error"></b>
+    </form>
+<strong> Above sign in/Signup works</strong>
+    <div>Below Submit wont work</div>
+
+<button (click)="add('name')" >Name</button>
+<button (click)="add('password')" >Password</button>
+<button (click)="add('email')">Email</button>
+<button (click)="add('DOB')" >DOB</button>
+<button (click)="add('phone')" >Phone.No</button>
+<form #formes="ngForm" (ngSubmit)="test(formes.value)">
+    <div #div>
+</div>
+<input type="Submit" value="submit" />
+</form>
+
+
+<div cdkDrag [cdkDragFreeDragPosition]="dragPosition">
+    Drag me around
+  </div>
